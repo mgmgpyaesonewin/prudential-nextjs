@@ -58,7 +58,8 @@ const Register: NextPage = () => {
                     <i className="fas fa-check"></i>
                     </span>
                 </div>
-                {errors.username && <p className="help is-danger">{errors.username}</p>}
+                { errors.username && 
+                    <p className="help is-danger">{errors.username}</p> }
                 </div>
                 </form>
                 </div>
