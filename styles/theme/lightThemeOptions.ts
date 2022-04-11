@@ -1,4 +1,5 @@
 import { ThemeOptions } from '@mui/material/styles';
+import { height } from '@mui/system';
 
 const lightThemeOptions: ThemeOptions = {
   palette: {
@@ -10,6 +11,23 @@ const lightThemeOptions: ThemeOptions = {
         main: '#b71c1c',
     },
   },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: '28px',
+          height: '45px'
+        }
+      }
+    },
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          minHeight: '80px',
+        }
+      }
+    },
+  }
 };
 
 export default lightThemeOptions;
